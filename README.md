@@ -1,7 +1,8 @@
-# App-DTox
-App usage tracker and Digital wellbeing app with more numerical and statistical approch. 
+App-DTox
+App usage tracker and Digital wellbeing app with more numerical and statistical approch.
 Author: Ash.
 Digital Wellbeing Dashboard - A React Native App for Android
+
 1. Project Vision & Goal
 This project is a mobile "Digital Wellbeing" dashboard for Android, built with React Native. Its goal is to provide users with a clear and intuitive way to visualize and understand their application usage over time. In a world filled with digital distractions, this tool empowers users to build healthier digital habits by tracking monthly usage for various applications.
 
@@ -41,12 +42,10 @@ Open your terminal and create a new React Native application.
 npx react-native@latest init DigitalWellbeingApp
 cd DigitalWellbeingApp
 
-
 Step 4.3: Install Dependencies
 Install the necessary libraries for the charts.
 
 npm install react-native-chart-kit react-native-svg
-
 
 Step 4.4: Replace the Code
 Replace the entire content of App.jsx (or App.tsx) with the code provided in the App.jsx file from this project.
@@ -56,7 +55,6 @@ Make sure you have an Android emulator running or a physical device connected an
 
 npx react-native run-android
 
-
 This command will build the app and install it on your emulator or device. You should now see the Digital Wellbeing Dashboard running!
 
 5. Next Steps & Future Enhancements
@@ -64,18 +62,17 @@ This project provides a solid foundation that can be extended with more advanced
 
 5.1 Accessing Real Usage Data with a Native Module
 To make this a fully functional utility, the next step is to replace the mock data with real data from the device. This is an advanced task that requires creating a Native Module.
-
 Here is the high-level roadmap:
 
 Write Native Android Code (Java/Kotlin):
 
-You will need to work inside the android folder of your React Native project.
+Work inside the android folder of your React Native project.
 
-The core of the logic will use Android's UsageStatsManager API to query the system for app usage statistics over a specific time range.
+Use Android's UsageStatsManager API to query the system for app usage statistics over a specific time range.
 
 Create a React Native "Bridge":
 
-You will create a special Java/Kotlin class that "bridges" your native code to the JavaScript environment of React Native.
+Create a special Java/Kotlin class that "bridges" your native code to the JavaScript environment of React Native.
 
 This involves creating a method (e.g., getUsageStats) that can be called from your App.jsx file.
 
@@ -83,17 +80,19 @@ Handle Android Permissions:
 
 Accessing usage stats requires a special permission: PACKAGE_USAGE_STATS.
 
-You must declare this in your AndroidManifest.xml file.
+Declare this in your AndroidManifest.xml file.
 
-Unlike normal permissions, you cannot ask for this with a simple pop-up. You must guide the user to their phone's settings screen to manually grant the permission.
+Guide the user to their phone's settings screen to manually grant the permission, as it cannot be requested with a simple pop-up.
 
 Update the React Native App:
 
-In your App.jsx file, you would import your new Native Module.
+In App.jsx, import your new Native Module.
 
-You would then use a useEffect hook to call your getUsageStats method, which would return the real data and update the app's state, causing the graphs to re-render with the live data.
+Use a useEffect hook to call your getUsageStats method, which would return the real data and update the app's state, causing the graphs to re-render with the live data.
 
 5.2 Other Potential Enhancements
+Efficient Background Data Syncing: To optimize performance and battery life, implement a background task that runs once a day (e.g., at midnight). This task would call the native module to get the day's usage stats and save them to a local on-device database (like SQLite). The app would then read from this fast local database instead of querying the entire system history every time it opens.
+
 User Authentication: Allow users to sign up and save their own usage data using a service like Firebase.
 
 Custom Date Ranges: Add a date picker to allow users to view their usage over different time periods (e.g., weekly, yearly).
