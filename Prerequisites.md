@@ -1,6 +1,5 @@
 Prerequisites for Digital Wellbeing App Development (Android)
 This guide details all the software and tools you must install on your system before you can begin creating the React Native application. Following these steps will ensure your development environment is correctly configured.
-
 1. Core Development Tools
 These are the fundamental tools required for any modern JavaScript development.
 
