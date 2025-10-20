@@ -26,7 +26,15 @@ The core feature is a series of line graphs—one for each tracked app—that el
 
 ## Getting Started
 
-To get started with the project, please refer to the [test.md](test.md) file for detailed instructions on how to run the project.
+To get started with the project, please refer to the [Getting Started Guide](docs/test.md) for detailed instructions on how to run the project.
+
+## Documentation
+
+For more detailed information about the project, please refer to the following documents:
+
+-   [Prerequisites](docs/Prerequisites.md)
+-   [Technical Documentation](docs/Technical_Documentation.md)
+-   [How I Built This Project](docs/howdidibuild.md)
 
 ## Next Steps & Future Enhancements
 
@@ -57,3 +65,15 @@ Here is the high-level roadmap:
 -   **User Authentication:** Allow users to sign up and save their own usage data using a service like Firebase.
 -   **Custom Date Ranges:** Add a date picker to allow users to view their usage over different time periods (e.g., weekly, yearly).
 -   **Goal Setting:** Implement a feature for users to set usage goals and receive notifications.
+
+## Contributing
+
+Contributions are welcome! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more information.
+
+## Code of Conduct
+
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
