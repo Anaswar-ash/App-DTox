@@ -39,3 +39,12 @@ I organized the project into the following structure:
 ## 5. Version Control
 
 I used Git for version control and GitHub to host the project. This allowed me to track changes, collaborate with others, and maintain a history of the project.
+
+## 6. Professionalization
+
+To make the project more professional and well-maintained, I took the following steps:
+
+-   **Project Structure:** I created a `docs` directory and moved all the documentation files into it to keep the root directory clean.
+-   **Configuration Files:** I added `.editorconfig` and `.prettierrc` files to enforce consistent coding styles and code formatting.
+-   **Documentation:** I added `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `LICENSE` files to the project. I also created a `map.md` file to track the changes.
+-   **README.md:** I updated the `README.md` file to be more professional and include links to all the documentation files.

@@ -35,6 +35,7 @@ For more detailed information about the project, please refer to the following d
 -   [Prerequisites](docs/Prerequisites.md)
 -   [Technical Documentation](docs/Technical_Documentation.md)
 -   [How I Built This Project](docs/howdidibuild.md)
+-   [Change Map](docs/map.md)
 
 ## Next Steps & Future Enhancements
 
