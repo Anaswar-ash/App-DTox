@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
   ScrollView,
   View,
@@ -8,6 +7,7 @@ import {
   StatusBar,
   Dimensions,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { LineChart } from 'react-native-chart-kit';
 
 const mockData = {
