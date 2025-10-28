@@ -71,6 +71,27 @@ Here is the high-level roadmap:
 
 The development history of this project is being tracked in the [Gemini-CLI-LOGS](https://github.com/Anaswar-ash/Gemini-CLI-LOGS) repository. This repository contains the logs of the Gemini CLI sessions, which include the commands that were executed and the changes that were made to the project.
 
+## Troubleshooting
+
+### Termux Build Issues
+
+When attempting to build and run this project in a Termux environment on Android, several issues were encountered. These issues are related to the Java environment and system library dependencies.
+
+The following steps were taken in an attempt to resolve the build errors:
+
+1.  **Installed OpenJDK:** A Java Development Kit is required for the Android build process. `openjdk-21` was installed.
+2.  **Set `JAVA_HOME`:** The `JAVA_HOME` environment variable was set to the location of the OpenJDK installation.
+3.  **`libiconv` Dependency:** The build failed with an error indicating that the `libiconv` library could not be found by the Java VM.
+4.  **Installed `libiconv`:** The `libiconv` package was installed.
+5.  **Library Path Adjustments:** Several attempts were made to help the Java VM find the `libiconv` library, including:
+    *   Setting the `LD_LIBRARY_PATH` environment variable.
+    *   Creating a symbolic link to `libiconv.so` in the Java VM's library directory.
+6.  **Upgraded Gradle:** The project's Gradle version was upgraded from 9.0.0 to 9.1.0.
+
+Despite these efforts, the build continues to fail with the same `libiconv` error. This suggests a deep incompatibility between the Java version, Gradle, and the Termux environment.
+
+**Conclusion:** At this time, the project cannot be successfully built in the Termux environment. It is recommended to use a standard Linux distribution on a computer for development.
+
 ## Contributing
 
 Contributions are welcome! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more information.
