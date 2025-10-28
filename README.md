@@ -67,6 +67,10 @@ Here is the high-level roadmap:
 -   **Custom Date Ranges:** Add a date picker to allow users to view their usage over different time periods (e.g., weekly, yearly).
 -   **Goal Setting:** Implement a feature for users to set usage goals and receive notifications.
 
+## Development History
+
+The development history of this project is being tracked in the [Gemini-CLI-LOGS](https://github.com/Anaswar-ash/Gemini-CLI-LOGS) repository. This repository contains the logs of the Gemini CLI sessions, which include the commands that were executed and the changes that were made to the project.
+
 ## Contributing
 
 Contributions are welcome! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more information.
